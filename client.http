@@ -11,13 +11,13 @@ GET {{baseUrl}}/health
 
 # Get rooms
 # @name getRooms
-GET {{baseUrl}}/rooms
+GET {{baseUrl}}/room
 
 ###
 
 # Create room
 # @name createRoom
-POST {{baseUrl}}/rooms
+POST {{baseUrl}}/room
 Accept: application/json
 Content-Type: application/json
 
@@ -34,16 +34,16 @@ Content-Type: application/json
 
 # Get room questions
 # @name getRoomQuestions
-GET {{baseUrl}}/rooms/{{roomId}}/questions
+GET {{baseUrl}}/room/{{roomId}}/questions
 
 ###
 
 # Create question
 # @name createQuestion
-POST {{baseUrl}}/rooms/{{roomId}}/questions
+POST {{baseUrl}}/room/fd5c1498-14e4-443f-9ae4-d9f486f7c454/questions
 Accept: application/json
 Content-Type: application/json
 
 {
-    "question": "Qual o conceito de X dentro de Y"
+    "question": "O que é Flutter?"
 }

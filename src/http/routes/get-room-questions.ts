@@ -5,9 +5,9 @@ import { db } from '../../db/connection.ts';
 import { schema } from '../../db/schema/index.ts';
 import { questions } from '../../db/schema/questions.ts';
 
-export const getRoomQuestions: FastifyPluginCallbackZod = (app) => {
+export const getRoomQuestionsRoute: FastifyPluginCallbackZod = (app) => {
   app.get(
-    '/rooms/:roomId/questions',
+    '/room/:roomId/questions',
     {
       schema: {
         params: z.object({

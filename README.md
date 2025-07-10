@@ -86,7 +86,7 @@ npm start
 A API estará disponível em `http://localhost:3333`
 
 - `GET /health` - Health check da aplicação
-- `GET /rooms` - Lista as salas disponíveis
+- `GET /room` - Lista as salas disponíveis
 
 ---
 
